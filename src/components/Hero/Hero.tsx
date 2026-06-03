@@ -1,4 +1,5 @@
 import "./Hero.css";
+import HeroContentCard from "./HeroContentCard";
 
 import heroVideo from "../../assets/videos/hero-video.mp4";
 
@@ -18,8 +19,7 @@ export default function Hero() {
 
       <div className="hero-overlay"></div>
 
-      <div className="hero-content">
-      </div>
+      <HeroContentCard />
 
     </section>
   );
