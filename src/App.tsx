@@ -1,12 +1,16 @@
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Team from "./pages/Team";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-    </>
+    <BrowserRouter basename="/mitecons">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/team" element={<Team />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

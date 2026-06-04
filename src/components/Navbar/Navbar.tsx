@@ -10,18 +10,28 @@ import {
 
 import { useState } from "react";
 
+import {
+  Link,
+  useLocation
+} from "react-router-dom";
+
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const location = useLocation();
 
   return (
     <>
       <nav className="navbar">
 
         <div className="navbar-logo">
-          <img src={logo} alt="MITECONS Logo" />
+          <Link to="/">
+            <img src={logo} alt="MITECONS Logo" />
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
+
         <div className="navbar-center">
 
           <ul className="nav-links">
@@ -46,9 +56,16 @@ export default function Navbar() {
               <ChevronDown size={12} className="nav-chevron" />
             </li>
 
-            <li className="nav-item">
-              <span>Team</span>
-              <ChevronDown size={12} className="nav-chevron" />
+            <li
+              className={`nav-item ${
+                location.pathname === "/team"
+                  ? "active-nav"
+                  : ""
+              }`}
+            >
+              <Link to="/team">
+                Team
+              </Link>
             </li>
 
             <li className="nav-item">
@@ -60,20 +77,27 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Search */}
+
         <div className="search-icon">
           <Search size={18} />
         </div>
 
         {/* Mobile Controls */}
+
         <div className="mobile-icons">
 
           <Search size={20} />
 
           <button
             className="menu-button"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            onClick={() =>
+              setMobileMenuOpen(!mobileMenuOpen)
+            }
           >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {mobileMenuOpen
+              ? <X size={24} />
+              : <Menu size={24} />
+            }
           </button>
 
         </div>
@@ -84,7 +108,9 @@ export default function Navbar() {
 
       <div
         className={`mobile-menu ${
-          mobileMenuOpen ? "mobile-menu-open" : ""
+          mobileMenuOpen
+            ? "mobile-menu-open"
+            : ""
         }`}
       >
 
@@ -98,7 +124,16 @@ export default function Navbar() {
 
           <li>Facilities</li>
 
-          <li>Team</li>
+          <li>
+            <Link
+              to="/team"
+              onClick={() =>
+                setMobileMenuOpen(false)
+              }
+            >
+              Team
+            </Link>
+          </li>
 
           <li>Contact</li>
 

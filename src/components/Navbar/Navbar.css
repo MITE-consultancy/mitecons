@@ -194,3 +194,21 @@
         display: flex;
     }
 }
+
+/* React Router Links */
+
+.nav-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Active Team Menu */
+
+.active-nav::after {
+    width: 80% !important;
+}

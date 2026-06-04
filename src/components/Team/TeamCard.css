@@ -1,0 +1,70 @@
+/* src/components/Team/TeamCard.css */
+
+.team-card {
+    width: 280px;
+}
+
+.team-image-wrapper {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.team-image {
+    width: 100%;
+    height: 420px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.team-overlay {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 24px;
+
+    background: rgba(255,255,255,0.96);
+
+    transform: translateY(100%);
+
+    transition: transform 0.4s ease;
+}
+
+.team-card:hover .team-overlay {
+    transform: translateY(0);
+}
+
+.team-card:hover .team-image {
+    transform: scale(1.05);
+}
+
+.team-overlay p {
+    margin: 0;
+
+    color: #555555;
+
+    line-height: 1.7;
+}
+
+.team-name {
+    margin-top: 18px;
+    margin-bottom: 6px;
+
+    font-size: 2rem;
+    font-weight: 500;
+
+    color: #000000;
+}
+
+.team-designation {
+    color: #666666;
+}
