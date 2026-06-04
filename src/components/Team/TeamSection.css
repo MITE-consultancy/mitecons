@@ -116,8 +116,19 @@
         scrollbar-width: none;
     }
 
-    .team-grid::-webkit-scrollbar {
-        display: none;
+    .team-grid {
+        display: flex;
+        flex-wrap: nowrap;
+
+        gap: 36px;
+
+        padding: 0 60px;
+
+        width: max-content;
+
+        animation: teamSlide 18s ease-out forwards;
+
+        animation-play-state: running;
     }
 
     .team-card {
