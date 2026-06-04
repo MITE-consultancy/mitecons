@@ -2,9 +2,12 @@
 
 .team-section {
     background: #ffffff;
-
     padding: 120px 0;
 }
+
+/* ==========================================
+   HEADER
+========================================== */
 
 .team-header {
     max-width: 1400px;
@@ -32,25 +35,52 @@
     color: #666666;
 }
 
-.team-grid {
-    max-width: 1600px;
+/* ==========================================
+   TEAM SLIDER
+========================================== */
 
-    margin: 0 auto;
+.team-slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.team-grid {
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    gap: 36px;
 
     padding: 0 60px;
 
-    display: flex;
-    flex-wrap: wrap;
+    width: max-content;
 
-    justify-content: center;
-
-    gap: 36px;
+    animation: teamSlide 18s ease-out forwards;
 }
+
+/* ==========================================
+   CARD
+========================================== */
 
 .team-card {
     flex: 0 0 280px;
 
     cursor: pointer;
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+@keyframes teamSlide {
+
+    from {
+        transform: translateX(320px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 /* ==========================================
@@ -67,10 +97,6 @@
         padding: 0 24px;
     }
 
-    .team-grid {
-        padding: 0 24px;
-    }
-
     .team-title {
         font-size: 2.8rem;
     }
@@ -79,7 +105,22 @@
         font-size: 1rem;
     }
 
+    .team-grid {
+
+        padding: 0 24px;
+
+        animation: none;
+
+        overflow-x: auto;
+
+        scrollbar-width: none;
+    }
+
+    .team-grid::-webkit-scrollbar {
+        display: none;
+    }
+
     .team-card {
-        flex: 0 0 100%;
+        flex: 0 0 260px;
     }
 }

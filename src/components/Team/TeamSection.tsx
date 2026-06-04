@@ -19,17 +19,21 @@ export default function TeamSection() {
 
       </div>
 
-      <div className="team-grid">
+     <div className="team-slider">
 
-        {teamMembers.map((member) => (
-          <TeamCard
-            key={member.id}
-            name={member.name}
-            designation={member.designation}
-            image={member.image}
-            bio={member.bio}
-          />
-        ))}
+        <div className="team-grid">
+
+          {teamMembers.map((member) => (
+            <TeamCard
+              key={member.id}
+              name={member.name}
+              designation={member.designation}
+              image={member.image}
+              bio={member.bio}
+            />
+          ))}
+
+        </div>
 
       </div>
 
