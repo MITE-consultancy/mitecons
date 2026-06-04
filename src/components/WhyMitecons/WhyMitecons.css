@@ -1,0 +1,203 @@
+/* src/components/WhyMitecons/WhyMitecons.css */
+
+.why-section {
+    padding: 140px 60px;
+
+    background: #ffffff;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.why-header {
+    max-width: 1400px;
+
+    margin: 0 auto 80px auto;
+}
+
+.why-title {
+    font-size: 4rem;
+
+    margin-bottom: 20px;
+
+    color: #000000;
+}
+
+.why-subtitle {
+    max-width: 800px;
+
+    font-size: 1.3rem;
+
+    line-height: 1.8;
+
+    color: #666666;
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.why-grid {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.why-card {
+    background: #f7f7f7;
+
+    border: 1px solid #ececec;
+
+    padding: 50px;
+
+    min-height: 380px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-top: 3px solid transparent;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-10px);
+
+    border-top-color: #000000;
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================
+   NUMBER
+========================================== */
+
+.why-number {
+    font-size: 5rem;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    color: #e8e8e8;
+
+    margin-bottom: 40px;
+}
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.why-card h3 {
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+
+    color: #000000;
+
+    line-height: 1.2;
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.why-card p {
+    line-height: 1.9;
+
+    color: #666666;
+
+    margin-top: auto;
+}
+
+/* ==========================================
+   KEYWORDS
+========================================== */
+
+.keyword-slider {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 24px;
+}
+
+.keyword-pill {
+    padding: 8px 16px;
+
+    border: 1px solid #bdbdbd;
+
+    border-radius: 999px;
+
+    background: transparent;
+
+    font-size: 0.85rem;
+
+    font-weight: 500;
+
+    color: #444444;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.keyword-pill:hover {
+    background: #000000;
+
+    border-color: #000000;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-section {
+        padding: 80px 24px;
+    }
+
+    .why-title {
+        font-size: 2.8rem;
+    }
+
+    .why-card {
+        min-height: auto;
+    }
+
+    .why-number {
+        font-size: 4rem;
+    }
+
+    .why-card h3 {
+        font-size: 1.7rem;
+    }
+}
