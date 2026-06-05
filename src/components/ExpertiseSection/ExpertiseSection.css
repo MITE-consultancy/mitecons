@@ -1,0 +1,200 @@
+.expertise-section {
+    padding: 140px 60px;
+    background: #ffffff;
+    font-family: 'Inter', 'Sans-serif';
+}
+
+.expertise-header {
+    max-width: 1400px;
+    margin: 0 auto 60px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.expertise-header h2 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.expertise-header p {
+    max-width: 700px;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.all-solutions-btn {
+    background: #000;
+    color: white;
+
+    border: none;
+
+    padding: 18px 34px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.all-solutions-btn:hover {
+    background: #222;
+}
+
+/* ==========================================
+   FEATURE CARD
+========================================== */
+
+.expertise-feature {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    overflow: hidden;
+
+    background: #000;
+
+    height: 720px;
+}
+
+.expertise-content {
+    padding: 60px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.expertise-content h3 {
+    font-size: 2.5rem;
+
+    margin-bottom: 30px;
+}
+
+.expertise-content p {
+    line-height: 1.9;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    margin-bottom: 50px;
+}
+
+.expertise-content button {
+    width: fit-content;
+
+    background: transparent;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+
+    padding: 0;
+}
+
+.expertise-image {
+    height: 100%;
+}
+
+.expertise-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* ==========================================
+   TABS
+========================================== */
+
+.expertise-tabs {
+    max-width: 1400px;
+
+    margin: 30px auto 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.expertise-tab {
+    background: transparent;
+
+    border: none;
+
+    border-left: 1px solid #dddddd;
+
+    padding: 24px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    color: #999999;
+
+    transition: all 0.3s ease;
+}
+
+.expertise-tab:hover {
+    color: #000000;
+}
+
+.expertise-tab.active {
+    color: #000000;
+
+    font-weight: 700;
+
+    border-left: 3px solid #000000;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .expertise-header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .expertise-feature {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .expertise-image {
+        height: 400px;
+    }
+
+    .expertise-tabs {
+        grid-template-columns: 1fr;
+    }
+
+    .expertise-section {
+        padding: 80px 24px;
+    }
+
+    .expertise-header h2 {
+        font-size: 2.8rem;
+    }
+
+    .expertise-content {
+        padding: 40px 30px;
+    }
+}
