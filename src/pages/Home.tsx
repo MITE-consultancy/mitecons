@@ -72,6 +72,8 @@ import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import ProjectsSection from "../components/Projects/ProjectsSection";
 import WhyMitecons from "../components/WhyMitecons/WhyMitecons";
+import ExpertiseSection from "../components/ExpertiseSection/ExpertiseSection";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -80,6 +82,8 @@ export default function Home() {
       <Hero />
       <ProjectsSection />
       <WhyMitecons />
+      <ExpertiseSection />
+      <Footer />
     </>
   );
 }

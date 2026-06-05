@@ -26,34 +26,61 @@ export default function Navbar() {
 
         <div className="navbar-logo">
           <Link to="/">
-            <img src={logo} alt="MITECONS Logo" />
+            <img
+              src={logo}
+              alt="MITECONS Logo"
+            />
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
+        {/* =====================================
+            DESKTOP NAVIGATION
+        ===================================== */}
 
         <div className="navbar-center">
 
           <ul className="nav-links">
 
-            <li className="nav-item">
-              <span>About</span>
-              <ChevronDown size={12} className="nav-chevron" />
+            <li
+              className={`nav-item ${
+                location.pathname === "/about"
+                  ? "active-nav"
+                  : ""
+              }`}
+            >
+              <Link to="/about">
+                About
+              </Link>
             </li>
 
             <li className="nav-item">
               <span>Area of Expertise</span>
-              <ChevronDown size={12} className="nav-chevron" />
+
+              <ChevronDown
+                size={12}
+                className="nav-chevron"
+              />
             </li>
 
-            <li className="nav-item">
-              <span>Projects</span>
-              <ChevronDown size={12} className="nav-chevron" />
+            <li
+              className={`nav-item ${
+                location.pathname === "/projects"
+                  ? "active-nav"
+                  : ""
+              }`}
+            >
+              <Link to="/projects">
+                Projects
+              </Link>
             </li>
 
             <li className="nav-item">
               <span>Facilities</span>
-              <ChevronDown size={12} className="nav-chevron" />
+
+              <ChevronDown
+                size={12}
+                className="nav-chevron"
+              />
             </li>
 
             <li
@@ -76,13 +103,17 @@ export default function Navbar() {
 
         </div>
 
-        {/* Desktop Search */}
+        {/* =====================================
+            SEARCH
+        ===================================== */}
 
         <div className="search-icon">
           <Search size={18} />
         </div>
 
-        {/* Mobile Controls */}
+        {/* =====================================
+            MOBILE CONTROLS
+        ===================================== */}
 
         <div className="mobile-icons">
 
@@ -93,6 +124,7 @@ export default function Navbar() {
             onClick={() =>
               setMobileMenuOpen(!mobileMenuOpen)
             }
+            aria-label="Toggle Menu"
           >
             {mobileMenuOpen
               ? <X size={24} />
@@ -104,7 +136,9 @@ export default function Navbar() {
 
       </nav>
 
-      {/* Mobile Menu */}
+      {/* =====================================
+          MOBILE MENU
+      ===================================== */}
 
       <div
         className={`mobile-menu ${
@@ -116,11 +150,30 @@ export default function Navbar() {
 
         <ul>
 
-          <li>About</li>
+          <li
+            className={`nav-item ${
+              location.pathname === "/about"
+                ? "active-nav"
+                : ""
+            }`}
+          >
+            <Link to="/about">
+              About
+            </Link>
+          </li>
 
           <li>Area of Expertise</li>
 
-          <li>Projects</li>
+          <li>
+            <Link
+              to="/projects"
+              onClick={() =>
+                setMobileMenuOpen(false)
+              }
+            >
+              Projects
+            </Link>
+          </li>
 
           <li>Facilities</li>
 
