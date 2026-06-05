@@ -1,6 +1,7 @@
 import "./ProjectsSection.css";
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -93,9 +94,12 @@ export default function ProjectsSection() {
             {projects[currentIndex].description}
           </p>
 
-          <button className="projects-button">
+          <Link
+            to="/projects"
+            className="projects-button"
+            >
             View Project →
-          </button>
+        </Link>
 
           <div className="projects-footer">
 

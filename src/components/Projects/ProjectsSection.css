@@ -2,6 +2,8 @@
     padding: 120px 60px;
 
     background: #f8f8f8;
+
+    font-family: 'Inter', 'Sans-serif';
 }
 
 .projects-header {
@@ -66,17 +68,30 @@
 }
 
 .projects-button {
-    padding: 16px 30px;
 
-    border: none;
+    display: inline-flex;
 
-    background: #000;
+    align-items: center;
+    justify-content: center;
 
-    color: white;
+    background: #000000;
 
-    cursor: pointer;
+    color: #ffffff;
 
-    margin-bottom: 60px;
+    text-decoration: none;
+
+    padding: 18px 36px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.projects-button:hover {
+
+    background: #222222;
+
+    color: #ffffff;
 }
 
 .projects-footer {
@@ -122,6 +137,7 @@
 
     cursor: pointer;
 }
+
 
 @media (max-width: 768px) {
 
