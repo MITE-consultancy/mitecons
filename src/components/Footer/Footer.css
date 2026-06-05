@@ -1,0 +1,303 @@
+.footer {
+
+    background: #050505;
+
+    color: #ffffff;
+
+    padding: 120px 80px 50px;
+
+    font-family: 'Inter', sans-serif;
+}
+
+/* ==========================================
+   TOP
+========================================== */
+
+.footer-top {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 90px;
+
+    padding-bottom: 80px;
+}
+
+.footer-intro p {
+
+    font-size: 1.25rem;
+
+    line-height: 1.9;
+
+    color: rgba(255,255,255,0.75);
+
+    max-width: 520px;
+}
+
+.footer-column h4 {
+
+    font-size: 0.85rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 28px;
+
+    color: rgba(255,255,255,0.45);
+}
+
+.footer-column a {
+
+    display: block;
+
+    text-decoration: none;
+
+    color: rgba(255,255,255,0.75);
+
+    margin-bottom: 18px;
+
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+
+    color: #ffffff;
+}
+
+/* ==========================================
+   CONNECT
+========================================== */
+
+.footer-connect {
+
+    max-width: 1400px;
+
+    margin: 0 auto 40px auto;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.footer-connect span {
+
+    color: rgba(255,255,255,0.5);
+
+    font-size: 0.95rem;
+}
+
+.footer-socials {
+
+    display: flex;
+
+    gap: 22px;
+}
+
+.footer-socials a {
+
+    color: #ffffff;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.footer-socials a:hover {
+
+    transform: translateY(-3px);
+
+    opacity: 0.8;
+}
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.footer-divider {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    height: 1px;
+
+    background:
+        rgba(255,255,255,0.12);
+}
+
+/* ==========================================
+   BIG BRAND
+========================================== */
+
+.footer-brand {
+
+    max-width: 1400px;
+
+    margin: 55px auto 0 auto;
+
+    font-size: 10rem;
+
+    font-weight: 800;
+
+    line-height: 0.9;
+
+    letter-spacing: -8px;
+
+    color: rgba(255,255,255,0.96);
+}
+
+.footer-tagline {
+
+    max-width: 1400px;
+
+    margin: 16px auto 10px auto;
+
+    font-size: 1rem;
+
+    color: rgba(255,255,255,0.60);
+
+    letter-spacing: 1px;
+}
+
+.footer-institution {
+
+    max-width: 1400px;
+
+    margin: 0 auto 60px auto;
+
+    font-size: 0.95rem;
+
+    color: rgba(255,255,255,0.50);
+
+    line-height: 1.8;
+}
+
+/* ==========================================
+   BOTTOM
+========================================== */
+
+.footer-bottom {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding-top: 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.footer-bottom p {
+
+    color: rgba(255,255,255,0.50);
+
+    font-size: 0.95rem;
+}
+
+.footer-bottom-links {
+
+    display: flex;
+
+    gap: 32px;
+}
+
+.footer-bottom-links a {
+
+    text-decoration: none;
+
+    color: rgba(255,255,255,0.50);
+
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+
+    color: #ffffff;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1200px) {
+
+    .footer-brand {
+
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .footer {
+
+        padding: 80px 24px 40px;
+    }
+
+    .footer-top {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding-bottom: 50px;
+    }
+
+    .footer-connect {
+
+        justify-content: flex-start;
+
+        margin-top: 20px;
+    }
+
+    .footer-brand {
+
+        font-size: 4rem;
+
+        letter-spacing: -2px;
+    }
+
+    .footer-tagline {
+
+        font-size: 0.9rem;
+    }
+
+    .footer-institution {
+
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .footer-bottom-links {
+
+        flex-wrap: wrap;
+
+        gap: 18px;
+    }
+}
