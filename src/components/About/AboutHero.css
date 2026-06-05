@@ -1,0 +1,52 @@
+.about-hero {
+
+    background: #000000;
+
+    color: white;
+
+    padding: 180px 60px 140px;
+
+    font-family: 'Inter','Sans-serif';
+}
+
+.about-hero-content {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+.about-label {
+
+    font-size: 0.9rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    color: rgba(255,255,255,0.6);
+
+    margin-bottom: 30px;
+}
+
+.about-hero h1 {
+
+    font-size: 5rem;
+
+    line-height: 1.05;
+
+    max-width: 900px;
+
+    margin-bottom: 30px;
+}
+
+.about-description {
+
+    max-width: 700px;
+
+    font-size: 1.3rem;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,0.75);
+}

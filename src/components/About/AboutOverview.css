@@ -1,0 +1,116 @@
+.about-overview {
+
+    padding: 120px 60px;
+
+    background: #ffffff;
+
+    font-family: 'Inter','Sans-serif';
+}
+
+.overview-grid {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 80px;
+}
+
+.overview-grid h2 {
+
+    font-size: 4rem;
+
+    margin-bottom: 30px;
+}
+
+.overview-grid p {
+
+    font-size: 1.15rem;
+
+    line-height: 1.9;
+
+    color: #555;
+
+    margin-bottom: 24px;
+}
+
+.overview-side {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+.stat-box {
+
+    background: #f7f7f7;
+
+    padding: 40px;
+}
+
+.stat-box span {
+
+    font-size: 3rem;
+
+    font-weight: 700;
+
+    display: block;
+
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+
+    margin: 0;
+
+    color: #666;
+}
+
+.mission-section {
+
+    max-width: 1400px;
+
+    margin: 120px auto 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+}
+
+.mission-section h3 {
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+.mission-section p {
+
+    line-height: 1.9;
+
+    color: #555;
+}
+
+@media (max-width: 900px) {
+
+    .about-overview {
+        padding: 80px 24px;
+    }
+
+    .overview-grid,
+    .mission-section {
+        grid-template-columns: 1fr;
+    }
+
+    .overview-grid h2 {
+        font-size: 2.8rem;
+    }
+}
