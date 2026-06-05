@@ -1,0 +1,65 @@
+.projects-hero {
+
+    background: #000000;
+
+    color: #ffffff;
+
+    padding: 180px 60px 140px;
+
+    font-family: 'Inter', 'Sans-serif';
+}
+
+.projects-hero-content {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+.projects-label {
+
+    font-size: 0.9rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+
+    color: rgba(255,255,255,0.6);
+}
+
+.projects-hero h1 {
+
+    font-size: 5rem;
+
+    line-height: 1.05;
+
+    max-width: 900px;
+
+    margin-bottom: 30px;
+}
+
+.projects-description {
+
+    max-width: 700px;
+
+    font-size: 1.3rem;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,0.75);
+}
+
+@media (max-width: 900px) {
+
+    .projects-hero {
+
+        padding: 120px 24px 80px;
+    }
+
+    .projects-hero h1 {
+
+        font-size: 3rem;
+    }
+}
