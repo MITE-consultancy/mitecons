@@ -1,0 +1,45 @@
+.facilities-cta {
+
+    background: #050505;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 140px 40px;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.facilities-cta h2 {
+
+    font-size: 4rem;
+
+    max-width: 900px;
+
+    margin: 0 auto 20px auto;
+}
+
+.facilities-cta p {
+
+    font-size: 1.25rem;
+
+    color: rgba(255,255,255,0.75);
+
+    margin-bottom: 40px;
+}
+
+.facilities-cta button {
+
+    background: white;
+
+    color: black;
+
+    border: none;
+
+    padding: 18px 34px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}

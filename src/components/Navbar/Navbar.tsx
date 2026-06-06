@@ -2,7 +2,6 @@ import "./Navbar.css";
 import logo from "../../assets/images/mitecons-logo.png";
 
 import {
-  ChevronDown,
   Search,
   Menu,
   X
@@ -53,13 +52,16 @@ export default function Navbar() {
               </Link>
             </li>
 
-            <li className="nav-item">
-              <span>Area of Expertise</span>
-
-              <ChevronDown
-                size={12}
-                className="nav-chevron"
-              />
+            <li
+              className={`nav-item ${
+                location.pathname === "/expertise"
+                  ? "active-nav"
+                  : ""
+              }`}
+            >
+              <Link to="/expertise">
+                Area of Expertise
+              </Link>
             </li>
 
             <li
@@ -74,13 +76,16 @@ export default function Navbar() {
               </Link>
             </li>
 
-            <li className="nav-item">
-              <span>Facilities</span>
-
-              <ChevronDown
-                size={12}
-                className="nav-chevron"
-              />
+            <li
+              className={`nav-item ${
+                location.pathname === "/facilities"
+                  ? "active-nav"
+                  : ""
+              }`}
+            >
+              <Link to="/facilities">
+                Facilities
+              </Link>
             </li>
 
             <li
@@ -95,8 +100,16 @@ export default function Navbar() {
               </Link>
             </li>
 
-            <li className="nav-item">
-              <span>Contact</span>
+            <li
+              className={`nav-item ${
+                location.pathname === "/contact"
+                  ? "active-nav"
+                  : ""
+              }`}
+            >
+              <Link to="/contact">
+                Contact
+              </Link>
             </li>
 
           </ul>
@@ -150,19 +163,27 @@ export default function Navbar() {
 
         <ul>
 
-          <li
-            className={`nav-item ${
-              location.pathname === "/about"
-                ? "active-nav"
-                : ""
-            }`}
-          >
-            <Link to="/about">
+          <li>
+            <Link
+              to="/about"
+              onClick={() =>
+                setMobileMenuOpen(false)
+              }
+            >
               About
             </Link>
           </li>
 
-          <li>Area of Expertise</li>
+          <li>
+            <Link
+              to="/expertise"
+              onClick={() =>
+                setMobileMenuOpen(false)
+              }
+            >
+              Area of Expertise
+            </Link>
+          </li>
 
           <li>
             <Link
@@ -175,7 +196,16 @@ export default function Navbar() {
             </Link>
           </li>
 
-          <li>Facilities</li>
+          <li>
+            <Link
+              to="/facilities"
+              onClick={() =>
+                setMobileMenuOpen(false)
+              }
+            >
+              Facilities
+            </Link>
+          </li>
 
           <li>
             <Link
@@ -188,7 +218,16 @@ export default function Navbar() {
             </Link>
           </li>
 
-          <li>Contact</li>
+          <li>
+            <Link
+              to="/contact"
+              onClick={() =>
+                setMobileMenuOpen(false)
+              }
+            >
+              Contact
+            </Link>
+          </li>
 
         </ul>
 
