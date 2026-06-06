@@ -1,4 +1,5 @@
 import "./AboutOverview.css";
+import miteImage from "../../assets/images/mite.jpg";
 
 export default function AboutOverview() {
   return (
@@ -49,6 +50,10 @@ export default function AboutOverview() {
 
       </div>
 
+      {/* =====================================
+          VISION & MISSION
+      ===================================== */}
+
       <div className="mission-section">
 
         <div>
@@ -70,6 +75,74 @@ export default function AboutOverview() {
             collaboration to solve real-world
             challenges.
           </p>
+        </div>
+
+      </div>
+
+      {/* =====================================
+          MITE ADVANTAGE
+      ===================================== */}
+
+      <div className="institution-section">
+
+        <div className="institution-image">
+
+          <img
+            src={miteImage}
+            alt="MITE Campus"
+          />
+
+          <div className="image-overlay">
+            Mangalore Institute of Technology & Engineering
+          </div>
+
+        </div>
+
+        <div className="institution-content">
+
+          <span className="institution-label">
+            MITE ADVANTAGE
+          </span>
+
+          <h2 className="institution-title">
+            Built on the strength of
+            academic excellence.
+          </h2>
+
+          <p className="institution-description">
+            MITECONS leverages the academic,
+            research and innovation ecosystem
+            of Mangalore Institute of Technology
+            & Engineering to deliver consultancy
+            solutions grounded in knowledge,
+            practical expertise and emerging
+            technologies.
+          </p>
+
+          <div className="institution-features">
+
+            <div className="feature-item">
+              Experienced Faculty & Researchers
+            </div>
+
+            <div className="feature-item">
+              Modern Laboratories & Facilities
+            </div>
+
+            <div className="feature-item">
+              Industry & Government Collaboration
+            </div>
+
+            <div className="feature-item">
+              Research, Innovation & Consultancy
+            </div>
+
+            <div className="feature-item">
+              Multi-disciplinary Expertise
+            </div>
+
+          </div>
+
         </div>
 
       </div>

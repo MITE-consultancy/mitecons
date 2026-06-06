@@ -4,8 +4,12 @@
 
     background: #ffffff;
 
-    font-family: 'Inter','Sans-serif';
+    font-family: 'Inter', 'Sans-serif';
 }
+
+/* ==========================================
+   OVERVIEW
+========================================== */
 
 .overview-grid {
 
@@ -52,6 +56,18 @@
     background: #f7f7f7;
 
     padding: 40px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.stat-box:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(0,0,0,0.08);
 }
 
 .stat-box span {
@@ -71,6 +87,10 @@
 
     color: #666;
 }
+
+/* ==========================================
+   VISION & MISSION
+========================================== */
 
 .mission-section {
 
@@ -99,18 +119,193 @@
     color: #555;
 }
 
+/* ==========================================
+   INSTITUTION IMAGE
+========================================== */
+
+.institution-section {
+
+    max-width: 1400px;
+
+    margin: 120px auto 0 auto;
+}
+
+.institution-image {
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.institution-image img {
+
+    width: 100%;
+
+    height: 650px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.image-overlay {
+
+    position: absolute;
+
+    left: 60px;
+
+    bottom: 50px;
+
+    color: white;
+
+    font-size: 3rem;
+
+    font-weight: 700;
+
+    max-width: 900px;
+
+    text-shadow:
+        0 4px 15px rgba(0,0,0,0.35);
+}
+
+/* ==========================================
+   INSTITUTION CONTENT
+========================================== */
+
+.institution-content {
+
+    margin-top: 80px;
+
+    padding-left: 40px;
+
+    border-left: 5px solid #000000;
+}
+
+.institution-label {
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 0.9rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #888888;
+}
+
+.institution-title {
+
+    font-size: 3.5rem;
+
+    line-height: 1.1;
+
+    margin-bottom: 30px;
+
+    color: #000000;
+}
+
+.institution-description {
+
+    max-width: 950px;
+
+    font-size: 1.2rem;
+
+    line-height: 1.9;
+
+    color: #555555;
+
+    margin-bottom: 50px;
+}
+
+/* ==========================================
+   FEATURES
+========================================== */
+
+.institution-features {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 24px;
+}
+
+.feature-item {
+
+    background: #f7f7f7;
+
+    padding: 24px 28px;
+
+    font-size: 1.05rem;
+
+    font-weight: 500;
+
+    border-left: 4px solid #000000;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 25px rgba(0,0,0,0.08);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
 @media (max-width: 900px) {
 
     .about-overview {
+
         padding: 80px 24px;
     }
 
     .overview-grid,
     .mission-section {
+
         grid-template-columns: 1fr;
     }
 
     .overview-grid h2 {
+
         font-size: 2.8rem;
+    }
+
+    .institution-image img {
+
+        height: 350px;
+    }
+
+    .image-overlay {
+
+        left: 24px;
+
+        bottom: 24px;
+
+        font-size: 1.6rem;
+    }
+
+    .institution-content {
+
+        padding-left: 20px;
+    }
+
+    .institution-title {
+
+        font-size: 2.5rem;
+    }
+
+    .institution-features {
+
+        grid-template-columns: 1fr;
     }
 }
