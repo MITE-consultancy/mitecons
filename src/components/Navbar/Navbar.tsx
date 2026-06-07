@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import logo from "../../assets/images/mitecons-logo.png";
+import logo from "../../assets/images/MITE.gif";
 
 import {
   Search,
@@ -132,9 +132,7 @@ export default function Navbar() {
             SEARCH
         ===================================== */}
 
-        <div className="search-icon">
-          <Search size={18} />
-        </div>
+        
 
         {/* =====================================
             MOBILE CONTROLS

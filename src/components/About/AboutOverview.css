@@ -180,7 +180,7 @@
 
     padding-left: 40px;
 
-    border-left: 5px solid #000000;
+    border-left: 5px solid #1a4c96;
 }
 
 .institution-label {
@@ -245,7 +245,7 @@
 
     font-weight: 500;
 
-    border-left: 4px solid #000000;
+    border-left: 4px solid #1a4c96;
 
     transition:
         transform 0.3s ease,

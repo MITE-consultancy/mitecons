@@ -9,6 +9,8 @@
     background-color: #1a4c96;
 
     font-family: 'Inter', sans-serif;
+
+    padding-left: 420px;
 }
 
 /* ================================================= */
@@ -16,10 +18,10 @@
 /* ================================================= */
 
 .navbar-logo {
-    width: 130px;
+    width: 150px;
     height: 72px;
 
-    background: white;
+    background: #1a4c96;
 
     display: flex;
     align-items: center;
@@ -29,7 +31,7 @@
 }
 
 .navbar-logo img {
-    height: 30px;
+    height: 38px;
     width: auto;
 }
 
@@ -66,7 +68,7 @@
 
     height: 72px;
 
-    color:white;
+    color: white;
 
     font-size: 13px;
     font-weight: 600;
@@ -239,6 +241,10 @@
 
 @media (max-width: 1024px) {
 
+    .navbar {
+        padding-left: 0;
+    }
+
     .navbar-center,
     .search-icon {
         display: none;
@@ -246,5 +252,13 @@
 
     .mobile-icons {
         display: flex;
+    }
+
+    .navbar-logo {
+        width: 130px;
+    }
+
+    .navbar-logo img {
+        height: 30px;
     }
 }
