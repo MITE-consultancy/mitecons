@@ -9,6 +9,8 @@
     grid-template-columns: repeat(3, 1fr);
 
     gap: 30px;
+
+    padding: 0 60px;
 }
 
 .info-card {
@@ -16,6 +18,18 @@
     background: #f7f7f7;
 
     padding: 50px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(0,0,0,0.08);
 }
 
 .info-card h3 {
@@ -23,11 +37,39 @@
     margin-bottom: 20px;
 
     font-size: 1.5rem;
+
+    color: #000000;
 }
 
 .info-card p {
 
-    color: #666;
+    color: #666666;
 
     line-height: 1.8;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .contact-info {
+
+        grid-template-columns: 1fr;
+
+        margin: 80px auto;
+
+        padding: 0 24px;
+    }
+
+    .info-card {
+
+        padding: 32px;
+    }
+
+    .info-card h3 {
+
+        font-size: 1.3rem;
+    }
 }

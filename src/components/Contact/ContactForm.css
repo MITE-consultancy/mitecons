@@ -22,11 +22,13 @@
     font-size: 3rem;
 
     margin-bottom: 20px;
+
+    color: #000000;
 }
 
 .form-heading p {
 
-    color: #666;
+    color: #666666;
 
     line-height: 1.8;
 }
@@ -48,6 +50,30 @@
     border: 1px solid #dddddd;
 
     font-size: 1rem;
+
+    font-family: inherit;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+
+    outline: none;
+
+    border-color: #000000;
+
+    box-shadow:
+        0 0 0 3px rgba(0,0,0,0.08);
+}
+
+.contact-form textarea {
+
+    resize: vertical;
+
+    min-height: 180px;
 }
 
 .contact-form button {
@@ -56,11 +82,52 @@
 
     padding: 18px 34px;
 
-    background: black;
+    background: #000000;
 
-    color: white;
+    color: #ffffff;
 
     border: none;
 
+    font-weight: 600;
+
     cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.contact-form button:hover {
+
+    background: #222222;
+
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .contact-form-section {
+
+        padding: 80px 24px;
+    }
+
+    .form-heading h2 {
+
+        font-size: 2.4rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+
+        padding: 16px;
+    }
+
+    .contact-form button {
+
+        width: 100%;
+    }
 }

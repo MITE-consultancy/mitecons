@@ -15,21 +15,33 @@ import {
 } from "react-router-dom";
 
 export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const [mobileMenuOpen, setMobileMenuOpen] =
+    useState(false);
 
   const location = useLocation();
+
+  const closeMenu = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
     <>
       <nav className="navbar">
 
+        {/* =====================================
+            LOGO
+        ===================================== */}
+
         <div className="navbar-logo">
+
           <Link to="/">
             <img
               src={logo}
               alt="MITECONS Logo"
             />
           </Link>
+
         </div>
 
         {/* =====================================
@@ -134,10 +146,12 @@ export default function Navbar() {
 
           <button
             className="menu-button"
-            onClick={() =>
-              setMobileMenuOpen(!mobileMenuOpen)
-            }
             aria-label="Toggle Menu"
+            onClick={() =>
+              setMobileMenuOpen(
+                !mobileMenuOpen
+              )
+            }
           >
             {mobileMenuOpen
               ? <X size={24} />
@@ -163,67 +177,91 @@ export default function Navbar() {
 
         <ul>
 
-          <li>
+          <li
+            className={
+              location.pathname === "/about"
+                ? "mobile-active"
+                : ""
+            }
+          >
             <Link
               to="/about"
-              onClick={() =>
-                setMobileMenuOpen(false)
-              }
+              onClick={closeMenu}
             >
               About
             </Link>
           </li>
 
-          <li>
+          <li
+            className={
+              location.pathname === "/expertise"
+                ? "mobile-active"
+                : ""
+            }
+          >
             <Link
               to="/expertise"
-              onClick={() =>
-                setMobileMenuOpen(false)
-              }
+              onClick={closeMenu}
             >
               Area of Expertise
             </Link>
           </li>
 
-          <li>
+          <li
+            className={
+              location.pathname === "/projects"
+                ? "mobile-active"
+                : ""
+            }
+          >
             <Link
               to="/projects"
-              onClick={() =>
-                setMobileMenuOpen(false)
-              }
+              onClick={closeMenu}
             >
               Projects
             </Link>
           </li>
 
-          <li>
+          <li
+            className={
+              location.pathname === "/facilities"
+                ? "mobile-active"
+                : ""
+            }
+          >
             <Link
               to="/facilities"
-              onClick={() =>
-                setMobileMenuOpen(false)
-              }
+              onClick={closeMenu}
             >
               Facilities
             </Link>
           </li>
 
-          <li>
+          <li
+            className={
+              location.pathname === "/team"
+                ? "mobile-active"
+                : ""
+            }
+          >
             <Link
               to="/team"
-              onClick={() =>
-                setMobileMenuOpen(false)
-              }
+              onClick={closeMenu}
             >
               Team
             </Link>
           </li>
 
-          <li>
+          <li
+            className={
+              location.pathname === "/contact"
+                ? "mobile-active"
+                : ""
+            }
+          >
             <Link
               to="/contact"
-              onClick={() =>
-                setMobileMenuOpen(false)
-              }
+              onClick={closeMenu}
             >
               Contact
             </Link>

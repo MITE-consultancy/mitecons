@@ -1,6 +1,6 @@
 .expertise-hero {
 
-    background: #050505;
+    background: #f38100;
 
     color: white;
 
@@ -54,4 +54,33 @@
     line-height: 1.8;
 
     color: rgba(255,255,255,0.75);
+}
+
+@media (max-width: 900px) {
+
+    .expertise-hero {
+
+        min-height: auto;
+
+        padding: 120px 0 80px;
+    }
+
+    .expertise-hero-content {
+
+        padding: 0 24px;
+    }
+
+    .expertise-hero h1 {
+
+        font-size: 3rem;
+
+        line-height: 1.1;
+    }
+
+    .expertise-hero p {
+
+        font-size: 1.05rem;
+
+        line-height: 1.8;
+    }
 }

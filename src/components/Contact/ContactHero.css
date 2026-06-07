@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
 
-    font-family: 'Inter','Sanserif';
+    font-family: 'Inter', sans-serif;
 }
 
 .contact-hero-content {
@@ -28,6 +28,8 @@
     margin-bottom: 20px;
 
     letter-spacing: 2px;
+
+    text-transform: uppercase;
 
     color: rgba(255,255,255,0.6);
 }
@@ -52,4 +54,37 @@
     line-height: 1.8;
 
     color: rgba(255,255,255,0.75);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .contact-hero {
+
+        min-height: auto;
+
+        padding: 120px 0 80px;
+    }
+
+    .contact-hero-content {
+
+        padding: 0 24px;
+    }
+
+    .contact-hero-content h1 {
+
+        font-size: 3rem;
+
+        line-height: 1.1;
+    }
+
+    .contact-hero-content p {
+
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
 }

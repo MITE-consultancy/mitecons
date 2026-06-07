@@ -13,18 +13,26 @@
 
 .expertise-cta h2 {
 
+    max-width: 900px;
+
+    margin: 0 auto 20px auto;
+
     font-size: 4rem;
 
-    margin-bottom: 20px;
+    line-height: 1.1;
 }
 
 .expertise-cta p {
 
+    max-width: 700px;
+
+    margin: 0 auto 40px auto;
+
     font-size: 1.25rem;
 
-    color: rgba(255,255,255,0.75);
+    line-height: 1.8;
 
-    margin-bottom: 40px;
+    color: rgba(255,255,255,0.75);
 }
 
 .expertise-cta button {
@@ -40,4 +48,44 @@
     font-weight: 700;
 
     cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.expertise-cta button:hover {
+
+    background: #f2f2f2;
+
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .expertise-cta {
+
+        padding: 80px 24px;
+    }
+
+    .expertise-cta h2 {
+
+        font-size: 2.5rem;
+    }
+
+    .expertise-cta p {
+
+        font-size: 1rem;
+    }
+
+    .expertise-cta button {
+
+        width: 100%;
+
+        max-width: 320px;
+    }
 }
