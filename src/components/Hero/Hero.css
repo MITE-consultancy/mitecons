@@ -1,5 +1,3 @@
-/* src/components/Hero/Hero.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 .hero {
@@ -38,8 +36,10 @@
     width: 460px;
     min-height: 520px;
 
-    background: #000000;
+    background: #1a4c96;
     color: #ffffff;
+
+    border-top: 6px solid #e76c01;
 
     padding: 48px;
 
@@ -131,8 +131,8 @@
 
     border: none;
 
-    background: #ffffff;
-    color: #000000;
+    background: #e76c01;
+    color: #ffffff;
 
     font-family: "Inter", sans-serif;
     font-size: 0.85rem;
@@ -149,7 +149,7 @@
 }
 
 .hero-card-button:hover {
-    background: #f3f3f3;
+    background: #cf5f00;
 }
 
 /* ==========================================
@@ -194,7 +194,8 @@
 }
 
 .hero-card-arrow:hover {
-    border-color: #ffffff;
+    border-color: #e76c01;
+    color: #e76c01;
 }
 
 /* ==========================================
@@ -218,7 +219,7 @@
 }
 
 .hero-dot.active {
-    background: #ffffff;
+    background: #e76c01;
 }
 
 /* ==========================================
