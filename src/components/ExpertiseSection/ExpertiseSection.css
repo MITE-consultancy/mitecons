@@ -2,6 +2,7 @@
     padding: 140px 60px;
     background: #ffffff;
     font-family: 'Inter', 'Sans-serif';
+    color: #1a4c96;
 }
 
 .expertise-header {
@@ -27,7 +28,7 @@
 }
 
 .all-solutions-btn {
-    background: #000;
+    background: #1a4c96;;
     color: white;
 
     border: none;
@@ -39,10 +40,11 @@
     font-weight: 600;
 
     transition: all 0.3s ease;
+
 }
 
 .all-solutions-btn:hover {
-    background: #222;
+    background: #e76c01;
 }
 
 /* ==========================================
@@ -60,7 +62,7 @@
 
     overflow: hidden;
 
-    background: #000;
+    background: #1a4c96;
 
     height: 720px;
 }
