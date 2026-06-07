@@ -10,7 +10,9 @@ export default function AboutOverview() {
         <div>
 
           <h2>
-            Who We Are
+            <div> 
+              Who We Are
+            </div>
           </h2>
 
           <p>

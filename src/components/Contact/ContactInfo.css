@@ -11,6 +11,8 @@
     gap: 30px;
 
     padding: 0 60px;
+
+    color: #1a4c96;
 }
 
 .info-card {
@@ -22,6 +24,8 @@
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
+
+    color: #1a4c96;
 }
 
 .info-card:hover {
@@ -38,7 +42,7 @@
 
     font-size: 1.5rem;
 
-    color: #000000;
+    color: #1a4c96;
 }
 
 .info-card p {

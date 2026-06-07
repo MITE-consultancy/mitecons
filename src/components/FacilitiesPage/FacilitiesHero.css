@@ -19,6 +19,7 @@
     margin: 0 auto;
 
     padding: 0 80px;
+    
 }
 
 .facilities-label {
@@ -31,7 +32,9 @@
 
     letter-spacing: 2px;
 
-    color: rgba(255,255,255,0.55);
+    /* color: rgba(255,255,255,0.55); */
+
+    color: #1a4c96;
 }
 
 .facilities-hero h1 {

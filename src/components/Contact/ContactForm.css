@@ -3,6 +3,8 @@
     padding: 120px 80px;
 
     background: #ffffff;
+
+    color: #1a4c96;
 }
 
 .contact-form-wrapper {
@@ -23,7 +25,7 @@
 
     margin-bottom: 20px;
 
-    color: #000000;
+    color: #1a4c96;
 }
 
 .form-heading p {
@@ -31,6 +33,7 @@
     color: #666666;
 
     line-height: 1.8;
+    
 }
 
 .contact-form {
@@ -82,7 +85,7 @@
 
     padding: 18px 34px;
 
-    background: #000000;
+    background: #1a4c96;
 
     color: #ffffff;
 
@@ -99,7 +102,7 @@
 
 .contact-form button:hover {
 
-    background: #222222;
+    background: #e76c01;
 
     transform: translateY(-2px);
 }

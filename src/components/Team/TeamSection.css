@@ -24,7 +24,7 @@
 
     margin-bottom: 24px;
 
-    color: #000000;
+    color: #1a4c96;
 }
 
 .team-subtitle {
@@ -133,6 +133,6 @@
     }
 
     .team-card {
-        flex: 0 0 260px;
+        flex: 0 0 200px;
     }
 }

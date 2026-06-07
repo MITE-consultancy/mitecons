@@ -5,6 +5,8 @@
     background: white;
 
     font-family: 'Inter', sans-serif;
+
+    color: #1a4c96;
 }
 
 /* ==========================================
@@ -79,7 +81,7 @@
 
 .domain-content button {
 
-    background: black;
+    background: #1a4c96;
 
     color: white;
 
@@ -96,7 +98,7 @@
 
 .domain-content button:hover {
 
-    background: #222222;
+    background: #e76c01;
 
     transform: translateY(-2px);
 }
